@@ -26,3 +26,21 @@ Sebagian fitur seperti pemuatan font dan pelafalan suara dapat bergantung pada d
 Progres disimpan di penyimpanan lokal browser pada perangkat yang digunakan. Data tidak otomatis tersinkron ke perangkat lain. Untuk memindahkan atau menyimpan progres, buka **Progres Belajar → Cadangkan / pulihkan data**, lalu salin kode cadangan atau unduh file jika browser mendukungnya. Simpan kode cadangan di tempat aman dan jangan membagikannya karena berisi data progres belajar.
 
 Menghapus data situs/browser dapat menghapus progres lokal. Buat cadangan terlebih dahulu jika ingin menyimpannya.
+
+## Menjalankan dengan Nuxt
+
+```bash
+npm install
+npm run dev
+```
+
+Buka alamat yang ditampilkan Nuxt (biasanya `http://localhost:3000`). Versi produksi dapat dibuat dengan:
+
+```bash
+npm run build
+npm run preview
+```
+
+Untuk deploy ke Vercel, impor folder proyek ini ke Vercel. Vercel akan mengenali Nuxt dan menggunakan perintah build yang tersedia.
+
+Pada `/`, aplikasi dimuat langsung oleh halaman Vue di `pages/index.vue`. CSS dan JavaScript aplikasi berasal dari `public/japankanji.css` dan `public/japankanji.js`.
